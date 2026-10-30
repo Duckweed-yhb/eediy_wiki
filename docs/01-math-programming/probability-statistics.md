@@ -4,7 +4,7 @@
 >
 > 复习概率论与数理统计时整理的核心公式笔记，覆盖从随机事件、分布函数到参数估计的重点内容，使用 LaTeX 编写。
 
-![概率论笔记封面](../../assets/images/probability-notes-cover.jpg)
+![概率论笔记封面](/assets/images/probability-notes-cover.jpg)
 
 ### 笔记内容概览
 - **随机事件与概率**：条件概率、独立性、泊松逼近定理
@@ -16,6 +16,6 @@
 ### 下载笔记
 你可以点击下面的链接下载完整的 PDF 版本：
 
-[📄 下载概率论与数理统计笔记 (PDF)](../../assets/pdf/probability-and-statistics-notes.pdf)
+[📄 下载概率论与数理统计笔记 (PDF)](/assets/pdf/probability-and-statistics-notes.pdf)
 
 希望这份笔记能在你复习时帮上一点忙。

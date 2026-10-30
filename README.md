@@ -9,7 +9,11 @@ eediy_wiki/
 ├── docs/                          VitePress 站点根目录
 │   ├── index.md                  站点首页（板块卡片导航）
 │   ├── README.md                 EE 自学路线总览（板块关系与推荐顺序）
-│   ├── .vitepress/config.mjs      站点配置（导航、侧边栏，占位骨架）
+│   ├── .vitepress/config.mjs      站点配置（导航、侧边栏、base 路径）
+│   ├── public/
+│   │   └── assets/               笔记配图与 PDF（构建时原样拷贝到站点根）
+│   │       ├── images/
+│   │       └── pdf/
 │   ├── templates/
 │   │   └── course-template.md    单门课程 / 笔记模板
 │   ├── 01-math-programming/      数理与编程基础
@@ -20,10 +24,8 @@ eediy_wiki/
 │   ├── 06-signal-communication/  信号与通信
 │   ├── 07-digital-fpga/          数字逻辑与 FPGA
 │   └── 08-hardware-toolchain/     硬件工具链
-├── assets/                        笔记配图与 PDF 等静态资源
-│   ├── images/
-│   └── pdf/
-├── package.json                   VitePress 依赖与脚本（占位）
+├── .github/workflows/deploy.yml   GitHub Actions 自动构建并部署到 Pages
+├── package.json                   VitePress 依赖与脚本
 └── LICENSE                        MIT License
 ```
 
@@ -44,13 +46,24 @@ eediy_wiki/
 
 ## 本地预览
 
-> 当前为 Markdown 骨架，VitePress 依赖尚未安装；需要 Node.js 18+ 环境。
+> 需要 Node.js 18+（推荐 20 / 24）；在仓库根目录执行。
 
 ```bash
 npm install
 npm run docs:dev       # 本地预览
-npm run docs:build     # 构建静态站点（可部署到 GitHub Pages）
+npm run docs:build     # 构建静态站点到 docs/.vitepress/dist
+npm run docs:preview   # 本地预览构建产物
 ```
+
+## 部署到 GitHub Pages
+
+站点通过 GitHub Actions 在云端构建，无需本地先打包。流程如下：
+
+1. 仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**（只需设置一次）。
+2. 工作流见 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)：推送到 `main` 后自动安装依赖、构建并发布。
+3. 构建产物地址：<https://duckweed-yhb.github.io/eediy_wiki/>
+
+`config.mjs` 中 `base` 设为 `/eediy_wiki/`，与仓库名子路径对应；若以后改为根域名部署，再把 `base` 改成 `/`。新增配图、PDF 一律放进 `docs/public/assets/`，Markdown 里用 `/assets/...` 根路径引用。
 
 ## 新增内容约定
 

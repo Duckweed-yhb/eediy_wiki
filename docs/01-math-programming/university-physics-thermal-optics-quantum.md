@@ -4,7 +4,7 @@
 >
 > 学习大学物理（热学、光学、量子物理）时整理的核心公式与考点笔记，用 XeLaTeX 编写，可直接用于复习和备考。
 
-![大学物理笔记封面](../../assets/images/university-physics-notes%28thermal-optics-quantum%29.jpg)
+![大学物理笔记封面](/assets/images/university-physics-notes%28thermal-optics-quantum%29.jpg)
 
 ### 笔记内容概览
 - **热学（Thermal Physics）**：理想气体物态方程、速率分布、分子动能、热力学过程、热机与熵
@@ -14,6 +14,6 @@
 ### 下载笔记
 你可以点击下面的链接下载完整的 PDF 版本（含热学、光学、量子物理全部内容）：
 
-[📄 下载大学物理核心公式笔记 (PDF)](../../assets/pdf/university-physics%28thermal-optics-quantum%29.pdf)
+[📄 下载大学物理核心公式笔记 (PDF)](/assets/pdf/university-physics%28thermal-optics-quantum%29.pdf)
 
 笔记适配教材《大学物理学（第五版）》王少杰，各章节配套例题题号，并标注了英文术语便于对照。如需调整排版或补充章节，欢迎留言。
