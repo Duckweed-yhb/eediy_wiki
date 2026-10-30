@@ -1,9 +1,9 @@
 ---
 layout: home
 hero:
-  name: eediy_wiki
+  name: EE自学指南
   text: EE 自学路线与笔记归档
-  tagline: 从数理编程基础到电路、嵌入式、电机控制、电力系统，一份按成长路线组织的电气电子工程自学 Wiki。
+  tagline: 从数理编程基础到电路、嵌入式、电机控制、电力系统，一份按成长路线组织的电气电子工程自学 Wiki（EEDIY）。
   actions:
     - theme: brand
       text: 开始学习

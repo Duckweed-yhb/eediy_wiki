@@ -1,4 +1,4 @@
-// eediy_wiki · VitePress 站点配置（占位骨架）
+// EE自学指南（代号 EEDIY）· VitePress 站点配置
 // 说明：当前目录先以 Markdown 骨架为主；待 Node 18+ 环境就绪后，
 // 在仓库根执行 `npm install`，再用 `npm run docs:dev` 本地预览。
 // 文档：https://vitepress.dev/zh/guide/getting-started
@@ -8,8 +8,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   // 站点根路径：按 GitHub Pages 子路径 /eediy_wiki/ 占位；若改为根路径部署则置 '/'
   base: '/eediy_wiki/',
-  title: 'eediy_wiki',
-  description: 'EE 自学路线与笔记归档',
+  title: 'EE自学指南',
+  description: 'EE（电气电子工程）自学路线与笔记归档',
   lang: 'zh-CN',
   themeConfig: {
     nav: [
@@ -18,7 +18,7 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: 'EE 自学路线',
+        text: 'EE自学指南',
         items: [
           { text: '01 数理与编程基础', link: '/01-math-programming/README' },
           { text: '02 电路与电子学', link: '/02-circuit-electronics/README' },

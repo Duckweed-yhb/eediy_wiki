@@ -1,4 +1,6 @@
-# eediy_wiki
+# EE自学指南
+
+> 代号 EEDIY（EE + DIY），对标 csdiy.wiki 的「CS自学指南」。
 
 EE（电气电子工程）自学路线与笔记归档。参照 csdiy.wiki 的组织方式，把课程、教材、习题、项目和自己的笔记按成长路线分板块整理；站点基于 VitePress，内容全部以 Markdown 维护。
 
