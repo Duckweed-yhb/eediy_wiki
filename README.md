@@ -46,7 +46,7 @@ eediy_wiki/
 
 ## 本地预览
 
-> 需要 Node.js 18+（推荐 20 / 24）；在仓库根目录执行。
+> 需要 Node.js 18+（云端 CI 固定使用 20）；在仓库根目录执行。
 
 ```bash
 npm install
