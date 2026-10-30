@@ -1,0 +1,141 @@
+/* =====================================================================
+   EE自学指南 · 自定义主题样式
+   - Mermaid 图表容器基础间距
+   - 「硬件 → 软件」分层架构图（纯 HTML/CSS，配合 docs/roadmap.md）
+   ===================================================================== */
+
+/* Mermaid 图表在正文中的留白 */
+.mermaid-block {
+  margin: 1.25rem 0;
+}
+
+/* ---------------------------------------------------------------------
+   硬件 → 软件 分层架构图
+   自下而上：物理 / 数理基础 → 电路器件 → 数字固件 → 控制算法 → 应用系统
+   --------------------------------------------------------------------- */
+.arch-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+}
+
+.arch-layer {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0.9rem;
+  align-items: stretch;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  background: var(--vp-c-bg-soft);
+}
+
+.arch-layer__head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  border-right: 1px dashed var(--vp-c-divider);
+  padding-right: 0.9rem;
+}
+
+.arch-layer__level {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-3);
+}
+
+.arch-layer__name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--vp-c-text-1);
+}
+
+.arch-layer__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.arch-layer__desc {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.arch-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.arch-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border: 1px solid var(--vp-c-brand-soft);
+  text-decoration: none;
+}
+
+.arch-chip:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+/* 层底色：越靠上越偏软件冷色，越靠下越偏硬件暖色 */
+.arch-layer[data-tone="app"]    { border-left: 4px solid var(--vp-c-brand-2); }
+.arch-layer[data-tone="control"]{ border-left: 4px solid #4f94d4; }
+.arch-layer[data-tone="digital"]{ border-left: 4px solid #6c8ce0; }
+.arch-layer[data-tone="circuit"]{border-left: 4px solid #e0a05c; }
+.arch-layer[data-tone="physics"]{ border-left: 4px solid #d47a5f; }
+
+/* 贯穿全程的工具链侧栏 */
+.arch-toolchain {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 1rem;
+  border: 1px dashed var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-alt);
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+}
+
+.arch-toolchain__tag {
+  flex: none;
+  padding: 0.15rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  color: var(--vp-c-text-1);
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+}
+
+.arch-arrow {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--vp-c-text-3);
+  line-height: 1;
+  margin: -0.15rem 0;
+}
+
+/* 窄屏：层标签与正文上下堆叠 */
+@media (max-width: 640px) {
+  .arch-layer {
+    grid-template-columns: 1fr;
+  }
+  .arch-layer__head {
+    border-right: none;
+    border-bottom: 1px dashed var(--vp-c-divider);
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+}

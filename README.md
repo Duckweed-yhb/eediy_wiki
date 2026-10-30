@@ -11,6 +11,13 @@ eediy_wiki/
 ├── docs/                          VitePress 站点根目录
 │   ├── index.md                  站点首页（板块卡片导航）
 │   ├── README.md                 EE 自学路线总览（板块关系与推荐顺序）
+│   ├── roadmap.md                路线地图（课程前置依赖图 + 硬件→软件分层架构图）
+│   ├── appendix/                 附录：电子书、公开课、资源网站、工具清单
+│   │   ├── README.md
+│   │   ├── books.md
+│   │   ├── courses.md
+│   │   ├── resources.md
+│   │   └── tools.md
 │   ├── .vitepress/config.mjs      站点配置（导航、侧边栏、base 路径）
 │   ├── public/
 │   │   └── assets/               笔记配图与 PDF（构建时原样拷贝到站点根）
@@ -33,7 +40,9 @@ eediy_wiki/
 
 ## 路线总览
 
-完整板块关系、前置依赖与推荐学习顺序见 [docs/README.md](docs/README.md)。
+- 图形化全局关系：[docs/roadmap.md](docs/roadmap.md) —— 课程前置依赖图与硬件→软件分层架构图。
+- 板块关系、前置依赖与推荐学习顺序：[docs/README.md](docs/README.md)。
+- 跨板块资源汇总（电子书、公开课、网站、工具）：[docs/appendix/README.md](docs/appendix/README.md)。
 
 | 板块 | 页面 | 一句话定位 |
 |---|---|---|
@@ -71,6 +80,7 @@ npm run docs:preview   # 本地预览构建产物
 
 - 新增课程或笔记：复制 [`docs/templates/course-template.md`](docs/templates/course-template.md)，放进对应板块目录，再回到该板块 README 的「我的笔记」补一行链接。
 - 外部课程、教材、习题登记在板块 README 对应分区，写清名称、链接与一句话说明；自己写的笔记放在「我的笔记」。
+- 跨板块的电子书、公开课平台、资源网站与通用工具统一登记在 [docs/appendix/](docs/appendix/README.md)，不与板块内专属资源重复维护。
 - 尚未收集到的内容保留「（待补充）」占位，不凭印象填写课程名或链接。
 
 ## 许可证
