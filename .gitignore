@@ -1,0 +1,9 @@
+# VitePress / Node
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.log
