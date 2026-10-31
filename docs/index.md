@@ -9,6 +9,9 @@ hero:
       text: 开始学习
       link: /01-math-programming/README
     - theme: alt
+      text: 前言 · 为什么做这个站
+      link: /preface
+    - theme: alt
       text: 路线地图
       link: /roadmap
     - theme: alt

@@ -143,4 +143,4 @@ flowchart TD
 | **系统集成** | [04 电机与运动控制](./04-motor-control/README.md)、[05 电力系统](./05-power-system/README.md) | 完成闭环控制、电力分析与优化等完整工程 |
 | **按需查阅** | [08 硬件工具链](./08-hardware-toolchain/README.md) | 做项目时回查对应工具与仪器用法 |
 
-> 板块的完整索引、每门课程与笔记的位置，见 [路线总览](./README.md)；电子书、公开课、资源网站与工具清单见 [附录](./appendix/README.md)。
+> 板块的完整索引、每门课程与笔记的位置，见 [路线总览](./README.md)；电子书、公开课、资源网站与工具清单见 [附录](./appendix/README.md)。为什么做这个站，见 [前言 · 为什么做这个站](/preface)。

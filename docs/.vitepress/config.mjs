@@ -22,6 +22,7 @@ export default defineConfig({
   },
   themeConfig: {
     nav: [
+      { text: '前言', link: '/preface' },
       { text: '路线地图', link: '/roadmap' },
       { text: '路线总览', link: '/README' },
       { text: '附录', link: '/appendix/README' },
@@ -31,6 +32,7 @@ export default defineConfig({
       {
         text: '总览',
         items: [
+          { text: '前言 · 为什么做这个站', link: '/preface' },
           { text: '路线地图（依赖图 · 架构图）', link: '/roadmap' },
           { text: '路线总览（板块索引）', link: '/README' },
           { text: '附录总览', link: '/appendix/README' }
